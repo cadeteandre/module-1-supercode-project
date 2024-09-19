@@ -1,0 +1,475 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ========== Fonts ========== */
+
+@font-face {
+    font-family: "Urbanist-reg";
+    src: url(../fonts/Urbanist-Regular.ttf);
+}
+@font-face {
+    font-family: "Urbanist-med";
+    src: url(../fonts/Urbanist-Medium.ttf);
+}
+@font-face {
+    font-family: "Urbanist-semibold";
+    src: url(../fonts/Urbanist-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Urbanist-bold";
+    src: url(../fonts/Urbanist-Bold.ttf);
+}
+@font-face {
+    font-family: "Urbanist-extrabold";
+    src: url(../fonts/Urbanist-ExtraBold.ttf);
+}
+
+/* ========== General Styling ========== */
+
+html {
+    font-family: "Urbanist-reg";
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 192rem;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.img-box {
+    position: relative;
+}
+
+/* ========== Typography ========== */
+
+body {
+    letter-spacing: 0;
+    font-size: 1.8rem;
+}
+h1 {
+    font-family: "Urbanist-bold";
+    font-size: 5.8rem;
+    line-height: 6rem;
+}
+
+h2 {
+    font-family: "Urbanist-bold";
+    font-size: 5rem;
+}
+
+h3 {
+    font-family: "Urbanist-semibold";
+    font-size: 3.4rem;
+}
+
+h4 {
+    font-family: "Urbanist-semibold";
+    font-size: 2.3rem;
+}
+
+h5 {
+    font-family: "Urbanist-semibold";
+    font-size: 1.7rem;
+}
+
+h6 {
+    font-size: 1.7rem;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+/* ========== Header Styling ========== */
+
+header {
+    background-color: #1A3129;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem;
+    gap: 1.8rem;
+}
+
+.top-banner {
+    width: 83%;
+    background-color: #2C5446;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 4.7rem;
+}
+
+.green-style img, .green-style-2 img {
+    width: 19rem;
+    height: 10rem;
+}
+
+.green-style {
+    top: -2.5rem;
+    left: 4rem;
+}
+
+.green-style-2 {
+    transform: rotate(45deg);
+}
+
+.banner-text {
+    align-items: center;
+}
+
+.green-circle img {
+    width: 2.049rem;
+    height: 2.05rem;
+}
+
+.banner-text p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.7rem;
+    color: #FFF;
+    margin: 0 2rem 0 0.6rem;
+}
+
+.white.arrow img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.nav-bar {
+    width: 83%;
+}
+
+.nav-bar nav {
+    justify-content: space-between;
+}
+
+.logo {
+    color: #FFF;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.logo img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.logo a {
+    color: #FFF;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    gap: 2.6rem;
+}
+
+.nav-bar ul a {
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.7rem;
+}
+
+.buttons-container {
+    gap: 4rem;
+    align-items: center;
+}
+
+.contact {
+    cursor: pointer;
+    background-color: #CBEA7B;
+    width: 13rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact span {
+    color: #262626;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.7rem;
+}
+
+/* ========== Main Styling ========== */
+
+main {
+    width: 100%;
+    align-items: center;
+    background-color: #FAFDF2;
+    flex-direction: column;
+    gap: 15rem;
+}
+
+.hero {
+    gap: 5.4rem;
+
+}
+
+.hero-container {
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.hero-text {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 11.7rem 16.2rem 5rem 0;
+}
+
+.hero-text h3 {
+    border-bottom: 0.3rem solid #CBEA7B;
+    width: 46rem;
+    padding-bottom: 1rem;
+}
+
+/* ----- Main hero buttons ----- */
+
+.hero-buttons {
+    gap: 2rem;
+}
+
+.get-starter {
+    background-color: #CBEA7B;
+    border: none;
+    width: 16rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    color: #262626;
+}
+
+.book-a-demo {
+    background-color: #F6FBE9;
+    border: 0.1rem solid #CBEA7B;
+    width: 13rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    color: #262626;
+}
+
+/* ----- Main hero customers ----- */
+
+.hero-customers {
+    align-items: center;
+    gap: 1rem;
+}
+
+.customers-img {
+    border: 0.17rem solid #CBEA7B;
+    border-radius: 5rem;
+    padding-top: 0.6rem;
+    width: 13rem;
+}
+
+.customer-1  {
+    left: 1rem;
+}
+.customer-2  {
+    left: -1rem;
+}
+.customer-3  {
+    left: -3rem;
+}
+
+/* ----- Main features ----- */
+
+.features, .blogs, .kcal {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    padding: 0 16.2rem;
+}
+
+.text-container, .kcal-text-container {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    width: 53%;
+}
+
+.container {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sub-container {
+    gap: 3rem;
+}
+
+.sub-container article {
+    width: 78.3rem;
+    background-color: #F6FBE9;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4rem 5rem;
+    border-radius: 2rem;
+    border: 0.17rem solid #CBEA7B;
+}
+
+.sub-container-header {
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.sub-container-header .img-box {
+    text-align: center;
+    width: 6.8rem;
+    height: 6.8rem;
+    padding: 1.4rem;
+    background-color: #CBEA7B;
+    border-radius: 1rem;
+}
+
+/* ----- Main blogs ----- */
+
+/* .sub-container-text {
+
+} */
+.sub-container-text h4 {
+    margin: 0.4rem 0 3rem 0;
+}
+
+.blogger {
+    justify-content: space-between;
+    background-color: #FAFDF2;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #CBEA7B;
+}
+
+.post-data {
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.data p {
+    opacity: 0.5;
+}
+
+.post-reactions {
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-container {
+    background-color: #F6FBE9;
+    width: 6rem;
+    height: 6rem;
+    padding: 1.8rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #CBEA7B;
+}
+
+.kcal-text-container {
+    width: 66%;
+}
+
+.kcal .container {
+    width: 100%;
+    background-color: #F6FBE9;
+    align-items: center;
+    border-radius: 1rem;
+    border: 0.17rem solid #CBEA7B;
+    padding: 4.1rem 6.8rem;
+}
+
+.calc {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 4.5rem;
+}
+
+.input-text {
+    gap: 6rem;
+}
+
+.input-text input { /* Trabalhar na largura dos inputs */
+    /* width: 70rem; */
+    width: 35vw;
+    height: 5rem;
+    border: none;
+    border-radius: 1rem;
+    border: 0.17rem solid #CBEA7B;
+}
+
+.input-label {
+    gap: 0.8rem;
+    flex-direction: column;
+}
+
+.gender {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.input-ratio {
+    gap: 6rem;
+}
+
+.calculate {
+    text-align: center;
+    padding: 1.8rem 16.75rem;
+    width: 41.2rem;
+    background-color: #CBEA7B;
+    height: 6.3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.calculate button {
+    background-color: #CBEA7B;
+    border: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.result {
+    width: 40vw;
+    height: 10vh;
+    background-color: #FFF;
+    border: 0.17rem solid #CBEA7B;
+    border-radius: 1rem;
+    /* padding: 0.8rem 9.7rem 0.8rem 3.7rem; */
+}
+
+.kcal-kj {
+    /* width: 100%; */
+    gap: 10rem;
+    padding: 0.8rem 9.7rem 0 26vw;
+    border-bottom: 0.1rem solid #CBEA7B;
+}
+
+.result-description-text {
+    padding: 1.1rem 25.5rem 0.7rem 3.6rem;
+}
+
+.result-numbers {
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    width: 13vw;
+    padding-right: 3rem;
+}
