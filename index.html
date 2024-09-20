@@ -9,13 +9,21 @@
 <body>
     <header class="flex"> <!-- ========== Header start ========== -->
         <div class="flex top-banner">
-            <div class="img-box green-style"><img src="./assets/images/path.png" alt="green-style"></div>
-            <div class="flex banner-text">
-                <div class="img-box green-circle"><img src="./assets/images/Vector.png" alt="little-green-circle"></div>
-                <p>Join Our Personalized Nutrition Demo For Free</p>
-                <div class="img-box white-arrow"><img src="./assets/images/Vector (Stroke).png" alt="little-white-arrow"></div>
+            <div class="img-box green-style">
+                <img src="./assets/images/path.png" alt="green-style">
             </div>
-            <div class="img-box green-style-2"><img src="./assets/images/path.png" alt="green-style"></div>
+            <div class="flex banner-text">
+                <div class="img-box green-circle">
+                    <img src="./assets/images/Vector.png" alt="little-green-circle">
+                </div>
+                <p>Join Our Personalized Nutrition Demo For Free</p>
+                <div class="img-box white-arrow">
+                    <img src="./assets/images/Vector (Stroke).png" alt="little-white-arrow">
+                </div>
+            </div>
+            <div class="img-box green-style-2">
+                <img src="./assets/images/path.png" alt="green-style">
+            </div>
         </div>
         <div class="nav-bar">
             <nav class="flex">
@@ -215,10 +223,10 @@
                             <img src="./assets/images/Image (5).png" alt="food-decision">
                         </div>
                         <div class="sub-container-text">
-                            <span>Weight Loss</span>
-                            <h4>The Benefits of Hydration for Weight Loss</h4>
+                            <span>Mindful Eating</span>
+                            <h4>Cultivating a Healthy Relationship with Food</h4>
                             <p>
-                                Discover how staying hydrated can support your weight loss goals and improve overall health.
+                                Learn how practicing mindful eating can help you develop a healthier relationship with food and improve your overall well-being.
                             </p>
                         </div>
                         <div class="flex blogger">
@@ -248,10 +256,10 @@
                             <img src="./assets/images/Image (6).png" alt="food-decision">
                         </div>
                         <div class="sub-container-text">
-                            <span>Weight Loss</span>
-                            <h4>The Benefits of Hydration for Weight Loss</h4>
+                            <span>Understanding Macronutrients</span>
+                            <h4>Carbohydrates, Proteins, and Fats</h4>
                             <p>
-                                Discover how staying hydrated can support your weight loss goals and improve overall health.
+                                Get a comprehensive understanding of macronutrients and their role in your diet for optimal health and weight management.
                             </p>
                         </div>
                         <div class="flex blogger">
@@ -279,10 +287,10 @@
                             <img src="./assets/images/Image (7).png" alt="food-decision">
                         </div>
                         <div class="sub-container-text">
-                            <span>Weight Loss</span>
-                            <h4>The Benefits of Hydration for Weight Loss</h4>
+                            <span>Healthy Snacks on the Go</span>
+                            <h4>Quick and Nutritious Options</h4>
                             <p>
-                                Discover how staying hydrated can support your weight loss goals and improve overall health.
+                                Explore a variety of convenient and healthy snack ideas to keep you fueled throughout the day.
                             </p>
                         </div>
                         <div class="flex blogger">
@@ -317,7 +325,7 @@
             </div>
 
             <div class="flex container">
-                <form class="flex calc" action="">
+                 <form class="flex calc gender-check" action="" onsubmit="return false">
                     <div class="flex input-text">
                         <div class="flex input-label">
                             <label for="body-size">Body size (in cm)</label>
@@ -335,25 +343,39 @@
                         </div>
                         <div class="flex input-label">
                             <label for="activity">Activity</label>
-                            <input type="text" id="activity">
+                            <select name="activity" id="activity">
+                                <option class="activity-option">
+                                    Exclusively sedentary work with little or no physical activity in leisure time...
+                                </option>
+                                <option class="activity-option">
+                                    Lightly active (light exercise/sports 1-3 days/week)
+                                </option>
+                                <option class="activity-option">
+                                    Moderately active (moderate exercise/sports 3-5 days/week)
+                                </option>
+                                <option class="activity-option">
+                                    Very active (hard exercise/sports 6-7 days a week)
+                                </option>
+                                <option class="activity-option">
+                                    Super active (very hard exercise, physical job, or twice-a-day training)
+                                </option>
+                            </select>
                         </div>
                     </dib>
                     <div class="flex gender">
                         <h6>Gender</h6>
                         <div class="flex input-ratio">
                             <div class="female">
-                                <input type="radio" id="activity">
-                                <label for="">Female</label>
+                                <input type="radio" name="gender" id="gender-female" value="female">
+                                <label for="gender-female">Female</label>
                             </div>
                             <div class="male">
-                                <input type="radio" id="activity">
-                                <label for="">Male</label>
+                                <input type="radio" name="gender" id="gender-male" value="male">
+                                <label for="gender-male">Male</label>
                             </div>
                         </div>
                     </div>
-                    <div class="calculate">
-                        <button>Calculate</button>
-                    </div>
+                    <button class="calc-button calculate">Calculate</button>
                 </form>
                 <div class="table">
                     <table>
@@ -367,13 +389,13 @@
                         <tbody>
                             <tr>
                                 <td class="table-description">Basal Metabolic Rate</td>
-                                <td>1745.14</td>
-                                <td>7358.18</td>
+                                <td class="bmr-kcal-result">1745.14</td>
+                                <td class="bmr-kj-result">7358.18</td>
                             </tr>
                             <tr>
                                 <td class="table-description">Total Daily Energy Expenditure</td>
-                                <td>2636.20</td>
-                                <td>110137.30</td>
+                                <td class="tdee-kcal-result">2636.20</td>
+                                <td class="tdee-kj-result">110137.30</td>
                             </tr>
                         </tbody>
                     </table>
@@ -456,7 +478,7 @@
             </div>
         </section>
     </main> <!-- ========== Main End ========== -->
-    <footer> <!-- ========== Footer start ========== -->
+    <footer class="flex"> <!-- ========== Footer start ========== -->
         <div class="nav-bar">
             <nav class="flex">
                 <div class="flex logo">
@@ -485,12 +507,44 @@
                         <li>
                             <a href="#">Blog</a>
                         </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
                     </ul>
-                    <div class="flex contact">
-                        <span>Contact Us</span>
+                    <div class="flex go-top">
+                        <span class="go-top-text">Go to Top</span>
+                        <div class="flex go-top-button">
+                            <div class="img-box">
+                                <img src="./assets/images/arrow-small-up.png" alt="arrow-up">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
+        </div>
+        <div class="flex footer-contact">
+            <div class="flex contact-options">
+                <div class="flex button-wrap">
+                    <div class="img-box">
+                        <img src="./assets/images/mail.png" alt="mail-icon">
+                    </div>
+                    <button>hello@squareup.com</button>
+                </div>
+                <div class="flex button-wrap">
+                    <div class="img-box">
+                        <img src="./assets/images/phone.png" alt="phone-icon">
+                    </div>
+                    <button>+91 91813 23 2309</button>
+                </div>
+                <div class="flex button-wrap">
+                    <div class="img-box">
+                        <img src="./assets/images/gps.png" alt="gps-icon">
+                    </div>
+                    <button>Somewhere in the World</button>
+                </div>
+            </div>
+            <span class="copyright">© 2023 Nutritionist. All rights reserved.</span>
+        </div>
     </footer> <!-- ========== Footer End ========== -->
 
 
