@@ -99,7 +99,7 @@ p {
 
 /* ========== Header Styling ========== */
 
-header {
+header, footer {
     background-color: #1A3129;
     flex-direction: column;
     justify-content: center;
@@ -292,7 +292,7 @@ main {
 
 /* ----- Main features ----- */
 
-.features, .blogs, .kcal {
+.features, .blogs, .kcal, .pricing {
     width: 100%;
     justify-content: center;
     flex-direction: column;
@@ -446,24 +446,52 @@ main {
     cursor: pointer;
 }
 
-.result {
+/* -------------- Table -------------- */
+
+.table {
+    border: 0.17rem solid #CBEA7B;
+    border-radius: 1rem;
+    background-color: #FFF;
+}
+
+table {
+    width: 40vw;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    color: #262626;
+    border-bottom: 0.1rem solid #CBEA7B;
+}
+
+.table-description {
+    padding-left: 3.6rem;
+    text-align: left;
+
+}
+
+/* Table that went wrong */
+/* .result {
     width: 40vw;
     height: 10vh;
     background-color: #FFF;
     border: 0.17rem solid #CBEA7B;
     border-radius: 1rem;
-    /* padding: 0.8rem 9.7rem 0.8rem 3.7rem; */
 }
 
 .kcal-kj {
-    /* width: 100%; */
     gap: 10rem;
     padding: 0.8rem 9.7rem 0 26vw;
     border-bottom: 0.1rem solid #CBEA7B;
 }
 
 .result-description-text {
-    padding: 1.1rem 25.5rem 0.7rem 3.6rem;
+    padding: 1.1rem 15.5rem 0.7rem 3.6rem;
 }
 
 .result-numbers {
@@ -471,5 +499,77 @@ main {
     align-items: center;
     gap: 8rem;
     width: 13vw;
-    padding-right: 3rem;
+    padding: 0 3rem 0 20rem;
+} */
+
+.pricing-text-container {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-text-container p {
+    width: 52%;
+}
+
+.pricing-toggle {
+    /* width: 10vw; */
+    border: 0.17rem solid #CBEA7B;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.pricing-toggle button {
+    padding: 1.4rem 2.4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.pricing-buttons {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.plan-active {
+    background-color: #346454;
+    color: #FFF;
+    border: none;
+}
+
+.plan-disabled {
+    background-color: #FAFDF2;
+    border: none;
+}
+
+.type-price h4, .plan-price {
+    color: #346454;
+}
+
+.type-price {
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.plan-price {
+    font-family: "Urbanist-semibold";
+    font-size: 2.3rem;
+}
+
+.price-month {
+    font-size: 1.4rem;
+}
+
+.plan-container {
+    flex-direction: column;
+    gap: 3.3rem;
+}
+
+.plan-container button {
+    background-color: #CBEA7B;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 1.8rem 10rem;
+    border: none;;
 }
