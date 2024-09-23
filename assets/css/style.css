@@ -1,9 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 /* ========== Fonts ========== */
 
 @font-face {
@@ -29,6 +23,12 @@
 
 /* ========== General Styling ========== */
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: "Urbanist-reg";
     font-size: 62.5%;
@@ -37,6 +37,8 @@ html {
 body {
     max-width: 192rem;
     margin: auto;
+    letter-spacing: 0;
+    font-size: 1.8rem;
 }
 
 .flex {
@@ -58,14 +60,10 @@ ul {
 
 /* ========== Typography ========== */
 
-body {
-    letter-spacing: 0;
-    font-size: 1.8rem;
-}
 h1 {
     font-family: "Urbanist-bold";
-    font-size: 5.8rem;
-    line-height: 6rem;
+    font-size: 4rem;
+    line-height: 4rem;
 }
 
 h2 {
@@ -75,12 +73,12 @@ h2 {
 
 h3 {
     font-family: "Urbanist-semibold";
-    font-size: 3.4rem;
+    font-size: 2.2rem;
 }
 
 h4 {
     font-family: "Urbanist-semibold";
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
 h5 {
@@ -93,8 +91,8 @@ h6 {
 }
 
 p {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
 }
 
 /* ========== Header Styling ========== */
@@ -113,11 +111,11 @@ header, footer {
     background-color: #2C5446;
     justify-content: space-between;
     overflow: hidden;
-    height: 4.7rem;
+    height: 3.4rem;
 }
 
 .green-style img, .green-style-2 img {
-    width: 19rem;
+    width: 13rem;
     height: 10rem;
 }
 
@@ -128,6 +126,8 @@ header, footer {
 
 .green-style-2 {
     transform: rotate(45deg);
+    top: -1.2rem;
+    left: -2rem;
 }
 
 .banner-text {
@@ -135,8 +135,8 @@ header, footer {
 }
 
 .green-circle img {
-    width: 2.049rem;
-    height: 2.05rem;
+    width: 1.7rem;
+    height: 1.8rem;
 }
 
 .banner-text {
@@ -144,16 +144,16 @@ header, footer {
 }
 
 .banner-text p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 600;
     line-height: 2.7rem;
     color: #FFF;
     margin: 0 2rem 0 0.6rem;
 }
 
-.white.arrow img {
-    width: 2.4rem;
-    height: 2.4rem;
+.white-arrow img {
+    width: 1.4rem;
+    height: 1.4rem;
 }
 
 .nav-bar {
@@ -171,13 +171,13 @@ header, footer {
 }
 
 .logo img {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .logo a {
     color: #FFF;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -187,7 +187,7 @@ header, footer {
 
 .nav-bar ul a {
     color: #FFF;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 600;
     line-height: 2.7rem;
 }
@@ -200,8 +200,8 @@ header, footer {
 .contact {
     cursor: pointer;
     background-color: #CBEA7B;
-    width: 13rem;
-    height: 4rem;
+    width: 12rem;
+    height: 3.6rem;
     border-radius: 0.5rem;
     align-items: center;
     justify-content: center;
@@ -209,42 +209,51 @@ header, footer {
 
 .contact span {
     color: #262626;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 600;
-    line-height: 2.7rem;
 }
 
 /* ========== Main Styling ========== */
 
 main {
-    width: 100%;
+    width: 100vw;
     align-items: center;
     background-color: #FAFDF2;
     flex-direction: column;
-    gap: 15rem;
+    gap: 7rem;
     padding-bottom: 4.9rem;
 }
 
 .hero {
-    gap: 5.4rem;
+    gap: 3rem;
+    width: 100vw;
+    padding-right: 6rem;
+}
 
+.hero-img img {
+    width: 42vw;
+    height: 100%;
 }
 
 .hero-container {
     flex-direction: column;
-    gap: 7rem;
+    gap: 4rem;
 }
 
 .hero-text {
     flex-direction: column;
-    gap: 2rem;
-    padding: 11.7rem 16.2rem 5rem 0;
+    gap: 0.5rem;
+    padding: 5rem 0 3rem 0;
 }
 
 .hero-text h3 {
     border-bottom: 0.3rem solid #CBEA7B;
-    width: 46rem;
+    width: 25vw;
     padding-bottom: 1rem;
+}
+
+.hero-text h1 {
+    width: 36vw;
 }
 
 /* ----- Main hero buttons ----- */
@@ -256,19 +265,21 @@ main {
 .get-starter {
     background-color: #CBEA7B;
     border: none;
-    width: 16rem;
+    width: 13rem;
     height: 4rem;
     border-radius: 0.5rem;
     color: #262626;
+    font-size: 1.2rem;
 }
 
 .book-a-demo {
     background-color: #F6FBE9;
     border: 0.1rem solid #CBEA7B;
-    width: 13rem;
+    width: 11rem;
     height: 4rem;
     border-radius: 0.5rem;
     color: #262626;
+    font-size: 1.2rem;
 }
 
 /* ----- Main hero customers ----- */
@@ -282,11 +293,15 @@ main {
     border: 0.17rem solid #CBEA7B;
     border-radius: 5rem;
     padding-top: 0.6rem;
-    width: 13rem;
+    width: 8.5rem;
+}
+
+.customer-1 img, .customer-2 img, .customer-3 img {
+    width: 3.6rem;
 }
 
 .customer-1  {
-    left: 1rem;
+    left: 0.5rem;
 }
 .customer-2  {
     left: -1rem;
@@ -295,15 +310,18 @@ main {
     left: -3rem;
 }
 
+.hero-customers span {
+    font-size: 1.2rem;
+}
+
 /* ----- Main features ----- */
 
 .features, .blogs, .kcal {
-    width: 100%;
+    width: 88vw;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 8rem;
-    padding: 0 16.2rem;
 }
 
 .text-container, .kcal-text-container {
@@ -315,19 +333,21 @@ main {
 
 .container {
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
+    width: 100%;
 }
 
 .sub-container {
-    gap: 3rem;
+    gap: 2rem;
+    width: 100%;
 }
 
 .sub-container article {
     width: 78.3rem;
     background-color: #F6FBE9;
     flex-direction: column;
-    gap: 3rem;
-    padding: 4rem 5rem;
+    gap: 1.5rem;
+    padding: 2rem 2.5rem;
     border-radius: 2rem;
     border: 0.17rem solid #CBEA7B;
 }
@@ -339,11 +359,19 @@ main {
 
 .sub-container-header .img-box {
     text-align: center;
-    width: 6.8rem;
-    height: 6.8rem;
-    padding: 1.4rem;
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
     background-color: #CBEA7B;
     border-radius: 1rem;
+}
+
+.sub-container-header img {
+    width: 2rem;
+}
+
+.smaller-icons img {
+    width: 3rem;
 }
 
 /* ----- Main blogs ----- */
@@ -353,6 +381,14 @@ main {
 } */
 .sub-container-text h4 {
     margin: 0.4rem 0 3rem 0;
+}
+
+.blogs .container .sub-container article {
+    width: 49%;
+}
+
+.blog-img img {
+    width: 100%;
 }
 
 .blogger {
