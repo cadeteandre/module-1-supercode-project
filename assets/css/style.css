@@ -66,10 +66,10 @@ h1 {
     line-height: 4rem;
 }
 
-h2 {
+/* h2 {
     font-family: "Urbanist-bold";
     font-size: 5rem;
-}
+} */
 
 h3 {
     font-family: "Urbanist-semibold";
@@ -231,7 +231,7 @@ main {
 }
 
 .hero-img img {
-    width: 42vw;
+    width: 48vw;
     height: 100%;
 }
 
@@ -242,13 +242,15 @@ main {
 
 .hero-text {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 2rem;
     padding: 5rem 0 3rem 0;
+    max-width: 50rem;
 }
 
 .hero-text h3 {
     border-bottom: 0.3rem solid #CBEA7B;
-    width: 25vw;
+    width: 29vw;
+    max-width: 32rem;
     padding-bottom: 1rem;
 }
 
@@ -516,36 +518,8 @@ th {
 
 }
 
-/* Table that went wrong */
-/* .result {
-    width: 40vw;
-    height: 10vh;
-    background-color: #FFF;
-    border: 0.17rem solid #CBEA7B;
-    border-radius: 1rem;
-}
-
-.kcal-kj {
-    gap: 10rem;
-    padding: 0.8rem 9.7rem 0 26vw;
-    border-bottom: 0.1rem solid #CBEA7B;
-}
-
-.result-description-text {
-    padding: 1.1rem 15.5rem 0.7rem 3.6rem;
-}
-
-.result-numbers {
-    justify-content: center;
-    align-items: center;
-    gap: 8rem;
-    width: 13vw;
-    padding: 0 3rem 0 20rem;
-} */
-
 .pricing {
-    width: 100%;
-    padding: 0 16.2rem;
+    width: 88vw;
 }
 .pricing-text-container {
     text-align: center;
@@ -571,6 +545,10 @@ th {
     padding: 1.4rem 2.4rem;
     border-radius: 1rem;
     cursor: pointer;
+}
+
+.pricing .sub-container article {
+    width: 28vw;
 }
 
 .pricing-buttons {
@@ -624,9 +602,9 @@ th {
 /* ========== Footer Styling ========== */
 
 footer {
-    padding: 5rem 16.2rem;
+    padding: 5rem 6rem;
     justify-content: space-between;
-    gap: 6.7rem;
+    gap: 2rem;
 }
 
 .go-top {
@@ -652,7 +630,6 @@ footer {
 footer .buttons-container {
    width: 66%;
    justify-content: space-between;
-   gap: 30rem;
 }
 
 footer .nav-links {
@@ -665,11 +642,15 @@ footer .nav-bar {
 
 .footer-contact {
     background-color: #234338;
-    padding: 2rem 2.5rem;
+    padding: 1.5rem;
     border-radius: 1rem;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer-contact button, .footer-contact span {
+    font-size: 1.2rem;
 }
 
 .contact-options {
@@ -706,40 +687,45 @@ footer .nav-bar {
         font-size: 1.6rem;
     }
 
-    h2 {
-        font-family: "Urbanist-bold";
-        font-size: 2.4rem;
+    h1 {
+        font-size: 2.8rem;
+        line-height: 3rem;
+        letter-spacing: 0.2rem;
     }
 
     h3 {
         font-family: "Urbanist-semibold";
-        font-size: 2.8rem;
+        font-size: 1.8rem;
     }
 
-    /* h4 {
+    h4 {
         font-family: "Urbanist-semibold";
-        font-size: 2.3rem;
+        font-size: 1.6rem;
     }
 
-    h5 {
+    /* h5 {
         font-family: "Urbanist-semibold";
         font-size: 1.7rem;
     }
 
     h6 {
         font-size: 1.7rem;
-    }
+    } */
 
     p {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
-    } */
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
 
     /* ========== Header Styling ========== */
 
-
     .top-banner {
+        width: 87vw;
         height: 3rem;
+    }
+
+    .nav-bar {
+        width: 87vw;
     }
 
     .green-style img, .green-style-2 img {
@@ -749,7 +735,6 @@ footer .nav-bar {
 
     .green-style {
         top: -1rem;
-
     }
 
     .banner-text p {
@@ -762,7 +747,8 @@ footer .nav-bar {
     }
 
     .logo a {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
     }
 
     .nav-bar ul a {
@@ -770,7 +756,7 @@ footer .nav-bar {
     }
 
     .contact {
-        width: 8rem;
+        width: 7rem;
         height: 3rem;
         border-radius: 0.5rem;
         align-items: center;
@@ -780,15 +766,59 @@ footer .nav-bar {
     .contact span {
         font-family: "Urbanist-semibold";
         color: #262626;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 600;
-        line-height: 2.7rem;
     }
 
     .logo img {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2rem;
+        height: 2rem;
     }
+
+    .buttons-container {
+        gap: 2rem;
+    }
+
+    .nav-links {
+        gap: 1.6rem;
+    }
+
+    /* ========== Main Styling ========== */
+    
+    .hero-container {
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .hero-text-buttons {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hero-text {
+        padding-bottom: 0;
+    }
+
+    .get-starter {
+        width: 10rem;
+        height: 3rem;
+        font-size: 1.1rem;
+    }
+    
+    .book-a-demo {
+        width: 8rem;
+        height: 3rem;
+        font-size: 1.1rem;
+    }
+
+    .customers-img {
+        width: 7.2rem;
+    }
+    
+    .customer-1 img, .customer-2 img, .customer-3 img {
+        width: 3.2rem;
+    }
+
 }
 
 
