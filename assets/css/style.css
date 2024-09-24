@@ -240,6 +240,10 @@ main {
     gap: 4rem;
 }
 
+.hero-text-buttons {
+    flex-direction: column;
+}
+
 .hero-text {
     flex-direction: column;
     gap: 2rem;
@@ -791,7 +795,6 @@ footer .nav-bar {
     }
 
     .hero-text-buttons {
-        flex-direction: column;
         gap: 2rem;
     }
 
