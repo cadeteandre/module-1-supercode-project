@@ -213,6 +213,10 @@ header, footer {
     font-weight: 600;
 }
 
+.hamburger {
+    display: none;
+}
+
 /* ========== Main Styling ========== */
 
 main {
@@ -684,7 +688,7 @@ footer .nav-bar {
 /* ========== Tablet ========== */
 
 @media only screen and (max-width: 980px) {
-    /* ========== Typography ========== */
+    /* ========== Tablet Typography ========== */
 
     body {
         letter-spacing: 0;
@@ -707,21 +711,12 @@ footer .nav-bar {
         font-size: 1.6rem;
     }
 
-    /* h5 {
-        font-family: "Urbanist-semibold";
-        font-size: 1.7rem;
-    }
-
-    h6 {
-        font-size: 1.7rem;
-    } */
-
     p {
         font-size: 1.2rem;
         line-height: 1.8rem;
     }
 
-    /* ========== Header Styling ========== */
+    /* ========== Tablet Header Styling ========== */
 
     .top-banner {
         width: 87vw;
@@ -787,7 +782,7 @@ footer .nav-bar {
         gap: 1.6rem;
     }
 
-    /* ========== Main Styling ========== */
+    /* ========== Tablet Main Styling ========== */
     
     .hero-container {
         gap: 2rem;
@@ -828,7 +823,161 @@ footer .nav-bar {
 /* ========== Smartphone ========== */
 
 @media only screen and (max-width: 599px) {
-    header {
-        background-color: blue;
+
+    /* ========== Smartphone Header Styling ========== */
+    .top-banner {
+        border-radius: 1rem;
+    }
+    .green-style img, .green-style-2 img {
+        display: none;
+    }
+
+    .logo a {
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .contact {
+        width: 7rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact span {
+        font-family: "Urbanist-semibold";
+        color: #262626;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .logo img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .buttons-container {
+        gap: 1rem;
+        display: none;
+    }
+
+    .nav-links {
+        gap: 1.6rem;
+    }
+
+        /* styling hamburger icon */
+        .hamburger {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 2rem;
+            width: 2.6rem;
+        }
+        .hamburger .line {
+            background-color: #CBEA7B;
+            height: 0.3rem;
+            width: 100%;
+            border-radius: 0.2rem;
+            transition: 0.3s;
+        }
+
+    /* ========== Smartphone Main Styling ========== */
+    main {
+        width: 100%;
+    }
+    .hero {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-img img {
+        width: 100vw;
+    }
+    .hero-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .hero-customers {
+        position: relative;
+        top: -6rem;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+    .customers-img {
+        background-color: #F6FBE9;
+        width: 11.4rem;
+        height: 5rem;
+    }
+    .customer-1 img, .customer-2 img, .customer-3 img {
+        width: 4.6rem;
+        top: -0.5rem;
+    }
+    .customer-1  {
+        top: -0.5rem;
+    }
+    .customer-2  {
+        top: -0.5rem;
+    }
+    .customer-3  {
+        top: -0.5rem;
+    }
+    
+    .hero-customers span {
+        font-size: 1.6rem;
+    }
+    .hero-text-buttons {
+        align-items: center;
+    }
+    .hero-text {
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    .hero-text h3 {
+        width: 70vw;
+    }
+    .hero-text h1 {
+        width: 100%;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .hero-text p {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }    
+    .get-starter {
+        width: 16rem;
+        height: 4.4rem;
+        font-size: 1.6rem;
+    }
+    
+    .book-a-demo {
+        background-color: #F6FBE9;
+        width: 15rem;
+        height: 4.4rem;
+        font-size: 1.6rem;
+    }
+    .sub-container {
+        flex-direction: column;
+    }
+    .sub-container article {
+        width: 100%;
+    }
+    .blogs .container .sub-container article {
+        width: 100%;
+    }
+    .sub-container-text p {
+        font-size: 1.6rem;
+        line-height: 2.7rem;
+    }
+    .blogger {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .post-reactions {
+        align-self: flex-end;
     }
 }
