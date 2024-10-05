@@ -13,10 +13,10 @@ Responsive design: The page adapts to different screen sizes and offers optimal 
 
 ## Technologies
 
-<bold>HTML5:</bold> Structure of the website.
+<h3>HTML5:</h3> Structure of the website.
 <br>
-<bold>CSS3:</bold> Layout and design (for responsiveness I used Media Queries).
+<h3>CSS3:</h3> Layout and design (for responsiveness I used Media Queries).
 <br>
-<bold>JavaScript:</bold> For calculating Basal Metabolic Rate and Total Daily Energy Expenditure (for men and women).
+<h3>JavaScript:</h3> For calculating Basal Metabolic Rate and Total Daily Energy Expenditure (for men and women).
 
 ---
