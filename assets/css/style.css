@@ -385,10 +385,6 @@ main {
 }
 
 /* ----- Main blogs ----- */
-
-/* .sub-container-text {
-
-} */
 .sub-container-text h4 {
     margin: 0.4rem 0 3rem 0;
 }
@@ -456,9 +452,8 @@ main {
     gap: 6rem;
 }
 
-.input-text input, select { /* Trabalhar na largura dos inputs */
-    /* width: 70rem; */
-    width: 35vw;
+.input-text input, select { 
+    width: 33vw;
     height: 5rem;
     border: none;
     border-radius: 1rem;
@@ -482,21 +477,15 @@ main {
 
 .calculate {
     text-align: center;
-    padding: 1.8rem 16.75rem;
-    width: 41.2rem;
+    padding: 1.8rem 0;
+    width: 40rem;
     background-color: #CBEA7B;
-    height: 6.3rem;
+    height: 6rem;
     border-radius: 1rem;
     cursor: pointer;
-}
-
-.calculate {
-    background-color: #CBEA7B;
     border: none;
     font-size: 1.7rem;
-    cursor: pointer;
 }
-
 /* -------------- Table -------------- */
 
 .table {
@@ -542,7 +531,6 @@ th {
 }
 
 .pricing-toggle {
-    /* width: 10vw; */
     border: 0.17rem solid #CBEA7B;
     justify-content: center;
     padding: 1rem;
@@ -600,10 +588,11 @@ th {
 }
 
 .plan-container button {
+    text-align: center;
     background-color: #CBEA7B;
     border-radius: 1rem;
     cursor: pointer;
-    padding: 1.8rem 10rem;
+    padding: 1.8rem 0;
     border: none;;
 }
 
@@ -636,8 +625,8 @@ footer {
 }
 
 footer .buttons-container {
-   width: 66%;
-   justify-content: space-between;
+    width: 66%;
+    justify-content: space-between;
 }
 
 footer .nav-links {
@@ -979,5 +968,62 @@ footer .nav-bar {
     }
     .post-reactions {
         align-self: flex-end;
+    }
+    .calculate {
+        padding: 1.8rem 0;
+        width: 30rem;
+        height: 6rem;
+        font-size: 1.7rem;
+    }
+    .pricing .sub-container {
+        align-items: center;
+    }
+    .pricing .sub-container article {
+        width: 80vw;
+    }
+    /* ========== Smartphone Footer Styling ========== */
+    footer {
+        padding: 2.6rem;
+    }
+    footer .logo a {
+        font-size: 2rem;
+    }
+    footer nav {
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+    footer .buttons-container {
+        display: flex;
+        width: 100%;
+    }
+    footer .nav-links {
+        flex-wrap: wrap;
+    }
+    footer .nav-links a {
+        font-size: 1.6rem;
+    }
+    footer .go-top {
+        position: relative;
+        top: -7rem;
+    }
+    .footer-contact {
+        padding: 1rem;
+        border-radius: 1rem;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .footer-contact span {
+        font-size: 1.6rem;
+    }
+    .contact-options {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .button-wrap {
+        width: 90%;
+        justify-content: center;
     }
 }
